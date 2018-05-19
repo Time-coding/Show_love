@@ -1,0 +1,81 @@
+.mi_header{
+  position: fixed;
+  left:50%;
+  top:5px;
+  z-index: 10;
+  transform: translateX(-50%);
+}
+.mi_index{
+  width: 100%;
+  /* background-color:#ccc; */
+}
+.mimi{
+  text-align: center;
+  width: 300rpx;
+  padding:10px;
+  border-radius: 20px;
+  background-color: #fff;
+  opacity: 0.9;
+  margin:10px auto;
+  vertical-align: middle;
+}
+.mi_info{
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+.mi_content{
+  padding:20rpx;
+  padding-top:200rpx;
+  
+}
+.mi_art{
+  /* background-color: yellowgreen; */
+  color:#fff;
+  padding:100rpx 50rpx;
+  font-size: 16px;
+  height: 200rpx;
+  text-align: center;
+  overflow: hidden;
+  word-wrap:break-word;
+  word-break:break-all;
+}
+.mi_tool{
+  display:flex;
+  justify-content: space-between;
+  background-color:#fff;
+  padding:10px 0;
+  font-size: 12px;
+}
+.mi_t_l{
+  /* width:300rpx; */
+}
+.mi_zan{
+  display: inline-block;
+  padding:0 10px;
+}
+.m_z,.m_d{
+  margin-right:5px;
+}
+.mi_pic{
+  display:inline-block;
+  padding:0 10px;
+}
+.mi_t_r{
+  padding:0 10px;
+}
+.mi_t_r icon{
+  margin-right:5px;
+}
+/*背景图片  */
+.bcImg{
+    position: fixed;
+  top:0;
+  left:0;
+  z-index:-1;
+  width:100%;
+  height:100%;
+}
+.bcImg image{
+  width:100%;
+  height:100%;
+}

@@ -1,0 +1,40 @@
+<!--logs.wxml-->
+<view class='mi_index'>
+  <view class='mi_header'>
+    <view class='mimi' catchtap="onPostTap">
+      <icon type="success" size="20" color="green" /> 分享你的甜蜜
+    </view>
+  </view>
+  <view class='bcImg'>
+    <image src='../../images/mimi.jpg'></image>
+  </view>
+  <view class='mi_content'>
+    <block wx:for="{{postList}}" wx:for-item="item"  wx:key="index">
+      <view class='mi_info' style='background-color: {{item.backColor}};background-image:url({{item.bgimg}})' wx:key="index">
+        <view class='mi_art'>
+          {{ item.content}}
+        </view>
+        <view class='mi_tool'>
+          <view class='mi_t_l'>
+            <view class='mi_zan'>
+              <text class='m_z' catchtap='Num' data-id="{{item.id}}">赞</text>
+              <text>{{item.zan?item.zan:0}}</text>
+            </view>
+            <view class='mi_pic'>
+              <text class='m_d'>评论</text>
+              <text>5</text>
+            </view>
+
+          </view>
+          <view class='mi_t_r'>
+            {{item.name}}
+            <!-- <icon type="success" size="20" color="green" />
+            <icon type="success" size="20" color="green" />
+            <icon type="success" size="20" color="green" /> -->
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+
+</view>

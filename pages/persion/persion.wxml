@@ -1,0 +1,38 @@
+<!--个人中心  -->
+<view class='per'>
+  <form bindsubmit="bindFormSubmit" report-submit='true'>
+    <view class='per_header'>
+      <button catchtap="close">取消</button>
+      <button form-type="submit">发表</button>
+    </view>
+    <view class='per_content'>
+      <view class='per_text' style='background:{{color}};background-image:url({{bgimg}})'>
+        <view class='per_m'>
+          <!-- 除了你自己，没人知道你的身份。 -->
+          分享你的小甜蜜
+        </view>
+        <view class='text_ipt'>
+          <textarea class='ipt' placeholder='分享小心情吧...' name="textarea" placeholder-style="text-align:center;">
+          </textarea>
+        </view>
+      </view>
+      <view class='per_col'>
+        <!-- <text class='filepic' bindtap="chooseImage">上传图片 -->
+        <!-- </text>  -->
+        <view class='Ch_c' style='position:relative;' bindtap="chooseImage">
+          <text class='uploadImg' bindtap="chooseImage" style='position:absolute;font-size:22rpx;width:100%;text-align:center;'>点我</text>
+        </view>
+        <view class='Ch_c' wx:for="{{colorArray}}" wx:for-item="item" wx:key="index" bindtap="chooseColor" style='background:{{item}};' data-color="{{item}}">
+        </view>
+        <!-- <camera device-position="back" flash="off" binderror="error" style="width: 100%; height: 300px;"></camera>
+      <button type="primary" bindtap="takePhoto">拍照</button>
+      <view>预览</view>
+      <image mode="widthFix" src="{{src}}"></image> -->
+      </view>
+      <!-- <view class='per_foot' catchtap="onLogTap">
+        查看全部秘密 >
+      </view> -->
+    </view>
+  </form>
+
+</view>

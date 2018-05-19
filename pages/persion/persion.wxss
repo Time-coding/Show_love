@@ -1,0 +1,75 @@
+.per{
+  height:100vh;
+  background-color:rgb(34, 34, 34);
+  overflow: hidden;
+}
+.per_header{
+  display:flex;
+  justify-content: space-between;
+  padding:15rpx;
+  background-color:brown;
+}
+.per_header button{
+  /* padding: 0; */
+  margin: 0;
+  background-color:transparent;
+  box-shadow: 1px 1px 4px #000;
+  border:none;
+  /* position: static;   */
+  color:#fff;
+}
+.per_text{
+  /* background-color:burlywood; */
+  height: 400rpx;
+  width:100%;
+}
+.per_m{
+  background-color: #fff;
+  opacity: 0.4;
+  padding:15rpx;
+  font-size: 13px;
+  }
+  .text_ipt{
+    overflow: hidden;
+    padding:10rpx;
+    margin:0;
+  }
+  .ipt{
+    height: 250rpx;
+    text-align: center;
+    white-space:normal;
+    margin:10rpx auto;
+    /* width:100%; */
+  }
+  .per_foot{
+    position: fixed;
+    width:100%;
+    bottom: 0px;
+    text-align: center;
+    background-color:#000;
+    color:#fff;
+    padding:10px;
+  }
+  .per_col{
+    padding:10px;
+  }
+  .filepic{
+    display: inline-block;
+    width: 100rpx;
+    height:100rpx;
+    line-height: 90rpx;
+    border-radius: 100rpx;
+    background-color:aqua;
+    margin:20rpx;
+    font-size: 25rpx;
+  }
+  /* 点击变换颜色 */
+  .Ch_c{
+    display: inline-block;
+    width: 100rpx;
+    height:100rpx;
+    margin:20rpx;
+    line-height: 90rpx;
+    border-radius: 100rpx;
+    background-color:white;
+  }
